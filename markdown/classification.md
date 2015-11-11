@@ -14,6 +14,34 @@ Unfortunately, classes are rarely separable by a linear hyperplane. Most of the 
 
 ![SVM_nonlin](/images/svm_nonlin.gif?raw=true "SVM_nonlin")
 
-To use SVMs on these types of datasets, we must transform the space in which the points live. These transformations are called kernels. Such kernels can transform the space in the following way:
+To use SVMs on these types of datasets, we must transform the space in which the points live. These transformations are called kernels and ensure that a linear hyperplane to separate the classes will exist. Such kernels can transform the space in the following way:
 
 <img src="/images/svm_kernel.png" width="700"/>
+
+## SVMs in Scikit Learn
+Transforming the data's space and calculating the optimal hyperplane can be very hard to do. There are algorithms to handle these challenges, but coding them is very difficult. Luckily, Scikit Learn is here to help. Lets see how Scikit Learn can help classify a dataset that cannot be linearly separable:
+
+1. Create a new python file and import the following modules:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import svm
+```
+2. Generate some random data and classifications. Our classifications (Y) will be an exclusive or between the random x,y value pairs in X. This will create non-linear boundaries between our classes:
+```
+xx, yy = np.meshgrid(np.linspace(-3, 3, 500), np.linspace(-3, 3, 500))
+np.random.seed(0)
+X = np.random.randn(300, 2)
+Y = np.logical_xor(X[:, 0] > 0, X[:, 1] > 0)
+```
+3. Let's take a look at our data:
+```
+plt.scatter(X[:, 0], X[:, 1], s=30, c=Y, cmap=plt.cm.Paired)
+plt.xticks(())
+plt.yticks(())
+plt.axis([-3, 3, -3, 3])
+plt.show()
+```
+- After running this script we should see a set of points similar to the following diagram:
+
+![SVM_nonlin_example](/images/svm_nonlin_example.png?raw=true "SVM_nonlin_example")
