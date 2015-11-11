@@ -9,9 +9,9 @@
 `sudo easy_install pip`
 
 3. Install Scikit Learn with the following command:
-`sudo pip install -U scikit-learn`
+	- `sudo pip install -U scikit-learn`
 
 4. For use in this presentation, install NLTK:
-`sudo pip install -U nltk`
+	- `sudo pip install -U nltk`
 
 5. You are now ready to start working with Scikit Learn
