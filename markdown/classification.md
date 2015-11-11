@@ -76,7 +76,7 @@ Transforming the data's space and calculating the optimal hyperplane can be very
 The full code for this example can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/nonlin_svm.py)
 
 ## Other Classification Tools
-SVMs are very useful when data can be transformed such that there exists a linear separator. However, there are many cases where we cannot transform our data into such spaces. To learn about other classification tools Scikit Learn provides, visit [](http://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
+SVMs are very useful when data can be transformed such that there exists a linear separator. However, there are many cases where we cannot transform our data into such spaces. To learn about other classification tools Scikit Learn provides, visit (http://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
 
 Up Next: [Regression](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/regression.md)
 
