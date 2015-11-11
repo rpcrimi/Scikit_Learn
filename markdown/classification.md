@@ -21,14 +21,14 @@ To use SVMs on these types of datasets, we must transform the space in which the
 ## SVMs in Scikit Learn
 Transforming the data's space and calculating the optimal hyperplane can be very hard to do. There are algorithms to handle these challenges, but coding them is very difficult. Luckily, Scikit Learn is here to help. Lets see how Scikit Learn can help classify a dataset that cannot be linearly separable:
 
-- Create a new python file and import the following modules:
+1. Create a new python file and import the following modules:
 ```
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
 ```
 
-- Generate some random data and classifications. Our classifications (Y) will be an exclusive or between the random x,y value pairs in X. This will create non-linear boundaries between our classes:
+2. Generate some random data and classifications. Our classifications (Y) will be an exclusive or between the random x,y value pairs in X. This will create non-linear boundaries between our classes:
 ```
 xx, yy = np.meshgrid(np.linspace(-3, 3, 500), np.linspace(-3, 3, 500))
 np.random.seed(0)
