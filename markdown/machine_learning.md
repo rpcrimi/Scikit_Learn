@@ -6,6 +6,8 @@
 Machine Learning is a subfield of computer science in which algorithms build models from data to help in the predictions and decisions of future events. Compared to Artificial Intelligence, Machine Learning focuses more on the statistical representations of data to develop self learning algorithms.
 
 ## Fields of Machine Learning
+![Comic](/images/supervised_unsupervised.png?raw=true "Comic")
+
 There are three types of self learning algorithms within Machine Learning:
 
 1. Supervised Learning
