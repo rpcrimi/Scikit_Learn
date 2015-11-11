@@ -6,7 +6,7 @@
 	- SciPy (>= 0.9) [SciPy Installation](http://www.scipy.org/install.html)
 
 2. Install pip:
-`sudo easy_install pip`
+	- `sudo easy_install pip`
 
 3. Install Scikit Learn with the following command:
 	- `sudo pip install -U scikit-learn`
