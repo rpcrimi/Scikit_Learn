@@ -29,4 +29,6 @@ There are three types of self learning algorithms within Machine Learning:
 3. Reinforcement Learning
 	- Such algorithms interact with a dynamic environment and have no knowledge of whether they correctly performed a given task. For example, self-driving cars use Reinforcement Learning as they reinforce their knowledge as they are driving.
 
-In this presentation, we will only focus on Supervised and Unsupervised Learning.
+In this presentation, we will focus on Supervised and Unsupervised Learning.
+
+Up Next: [Set Up](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/set_up.md)
