@@ -16,4 +16,4 @@ Unfortunately, classes are rarely separable by a linear hyperplane. Most of the 
 
 To use SVMs on these types of datasets, we must transform the space in which the points live. These transformations are called kernels. Such kernels can transform the space in the following way:
 
-![SVM_kernel](/images/svm_kernel.png?raw=true "SVM_kernel")
+![SVM_kernel](/images/svm_kernel.png?raw=true "SVM_kernel" =250x)
