@@ -21,14 +21,14 @@ To use SVMs on these types of datasets, we must transform the space in which the
 ## SVMs in Scikit Learn
 Transforming the data's space and calculating the optimal hyperplane can be very hard to do. There are algorithms to handle these challenges, but coding them is very difficult. Luckily, Scikit Learn is here to help. Lets see how Scikit Learn can help classify a dataset that cannot be linearly separable:
 
-1. Create a new python file and import the following modules:
+- Create a new python file and import the following modules:
 ```
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
 ```
 
-2. Generate some random data and classifications. Our classifications (Y) will be an exclusive or between the random x,y value pairs in X. This will create non-linear boundaries between our classes:
+- Generate some random data and classifications. Our classifications (Y) will be an exclusive or between the random x,y value pairs in X. This will create non-linear boundaries between our classes:
 ```
 xx, yy = np.meshgrid(np.linspace(-3, 3, 500), np.linspace(-3, 3, 500))
 np.random.seed(0)
@@ -36,7 +36,7 @@ X = np.random.randn(300, 2)
 Y = np.logical_xor(X[:, 0] > 0, X[:, 1] > 0)
 ```
 
-3. Let's take a look at our data:
+- Let's take a look at our data:
 ```
 plt.scatter(X[:, 0], X[:, 1], s=30, c=Y, cmap=plt.cm.Paired)
 plt.xticks(())
@@ -47,7 +47,7 @@ plt.show()
 	- After running this script we should see a set of inseparable points similar to the following diagram:
 ![SVM_nonlin_example](/images/svm_nonlin_example.png?raw=true "SVM_nonlin_example")
 
-4. Without Scikit Learn's help, we would have to transform this space ourselves. However, Scikit Learn's implementation of SVMs will automatically transform the data for us. To do so, add the following code:
+- Without Scikit Learn's help, we would have to transform this space ourselves. However, Scikit Learn's implementation of SVMs will automatically transform the data for us. To do so, add the following code:
 ```
 clf = svm.SVC()
 clf.fit(X, Y)
@@ -59,7 +59,7 @@ Z = Z.reshape(xx.shape)
 	- Third, we assign decision boundaries for each point in the dataset to the list `Z`.
 	- Finally, we reshape our list `Z` so we can plot the data.
 
-5. Let's take a look at our data after it has been transformed:
+- Let's take a look at our data after it has been transformed:
 ```
 plt.imshow(Z, interpolation='nearest', extent=(xx.min(), xx.max(), yy.min(), yy.max()), aspect='auto', origin='lower', cmap=plt.cm.PuOr_r)
 contours = plt.contour(xx, yy, Z, levels=[0], linewidths=2, linetypes='--')
