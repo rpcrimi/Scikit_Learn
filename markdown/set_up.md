@@ -15,3 +15,5 @@
 	- `sudo pip install -U nltk`
 
 5. You are now ready to start working with Scikit Learn
+
+Up Next: [Classification](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/classification.md)
