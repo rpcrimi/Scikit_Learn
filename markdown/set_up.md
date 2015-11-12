@@ -11,9 +11,10 @@
 3. Install Scikit Learn with the following command:
 	- `sudo pip install -U scikit-learn`
 
-4. For use in this presentation, install NLTK:
+4. For use in this presentation, install NLTK and matplotlib:
 	- `sudo pip install -U nltk`
+	- `sudo pip-2.7 install matplotlib`
 
-5. You are now ready to start working with Scikit Learn
+6. You are now ready to start working with Scikit Learn
 
 Up Next: [Classification](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/classification.md)
