@@ -56,3 +56,5 @@ While the math behind Linear Regression is fairly simple, Scikit Learn's impleme
 	- The blue line in this figure represents the line that the `LinearRegression` class fit to the data. We can see how this line is a good representation of the data. Now, we can use this line to predict the number of chirps per second for a temperature that we have not observed.
 
 The full code for this example can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/regression.py). The data can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/cricket.csv).
+
+Up Next: [Clustering](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/clustering.md)
