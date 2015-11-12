@@ -13,7 +13,6 @@ It is rare to know the number clusters before running a K-Means algorithm. Howev
 	```
 	import numpy as np
 	import matplotlib.pyplot as plt
-
 	from sklearn.cluster import KMeans
 	from sklearn.datasets import make_blobs
 	```
@@ -62,4 +61,10 @@ It is rare to know the number clusters before running a K-Means algorithm. Howev
 	```
 	- After running this script we should see the following 5 clusters:
 ![K-Means](/images/kmeans_5.png?raw=true "K-Means")
+	- We now see the 5 clusters correctly grouped by color.
+
+The full code for this example can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/cluster.py)
+
+Up Next: [Metrics](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/metrics.md)
+
 
