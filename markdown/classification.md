@@ -39,9 +39,6 @@ Transforming the data's space and calculating the optimal hyperplane can be very
 3. Let's take a look at our data:
 	```
 	plt.scatter(X[:, 0], X[:, 1], s=30, c=Y, cmap=plt.cm.Paired)
-	plt.xticks(())
-	plt.yticks(())
-	plt.axis([-3, 3, -3, 3])
 	plt.show()
 	```
 	- After running this script we should see a set of inseparable points similar to the following diagram:
@@ -64,9 +61,6 @@ Transforming the data's space and calculating the optimal hyperplane can be very
 	plt.imshow(Z, interpolation='nearest', extent=(xx.min(), xx.max(), yy.min(), yy.max()), aspect='auto', origin='lower', cmap=plt.cm.PuOr_r)
 	contours = plt.contour(xx, yy, Z, levels=[0], linewidths=2, linetypes='--')
 	plt.scatter(X[:, 0], X[:, 1], s=30, c=Y, cmap=plt.cm.Paired)
-	plt.xticks(())
-	plt.yticks(())
-	plt.axis([-3, 3, -3, 3])
 	plt.show()
 	```
 	- After running this script we should see the following decision boundaries:
