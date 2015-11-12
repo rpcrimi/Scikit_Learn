@@ -16,10 +16,10 @@ Unfortunately, classes are rarely separable by a linear hyperplane. Most of the 
 
 To use SVMs on these types of datasets, we must transform the space in which the points live. These transformations are called kernels and ensure that a linear hyperplane to separate the classes will exist. Such kernels can transform the space in the following way:
 
-<img src="/images/svm_kernel.png" width="700"/>
+<img src="/images/svm_kernel.png" width="600"/>
 
 ## SVMs in Scikit Learn
-Transforming the data's space and calculating the optimal hyperplane can be very hard to do. There are algorithms to handle these challenges, but coding them is very difficult. Luckily, Scikit Learn is here to help. Lets see how Scikit Learn can help classify a dataset that cannot be linearly separable:
+Transforming the data's space and calculating the optimal hyperplane can be very hard to do. There are algorithms to handle these challenges, but coding them is also very difficult. Luckily, Scikit Learn is here to help. Lets see how Scikit Learn can help classify a dataset that cannot be linearly separable:
 
 1. Create a new python file and import the following modules:
 	```
@@ -78,6 +78,6 @@ The full code for this example can be found [here](https://github.com/rpcrimi/Sc
 ## Other Classification Tools
 SVMs are very useful when data can be transformed such that there exists a linear separator. However, there are many cases where we cannot transform our data into such spaces. To learn about other classification tools Scikit Learn provides, visit http://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 
-Up Next: [Regression](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/regression.md)
+Up Next: [Linear Regression](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/linear_regression.md)
 
 
