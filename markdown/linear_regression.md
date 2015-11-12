@@ -2,7 +2,7 @@
 
 Linear Regression is a technique in which semi-linear data is fit to a linear line. We can see an example of Linear Regression in the figure below:
 
-![Linear Regression](/images/linear_regression_example.png?raw=true "Linear Regression")
+![Linear Regression](/images/linear_regression_example.jpg?raw=true "Linear Regression")
 
 To calculate this line, we want to minimize the residual sum of squares. This means that the line will be as close as it can be to each point in the dataset.
 
