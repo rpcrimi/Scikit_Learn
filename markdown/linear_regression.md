@@ -18,4 +18,21 @@ While the math behind Linear Regression is fairly simple, we can use Scikit Lear
 	from sklearn import linear_model
 	```
 
-2. Included in the code directory is a file named [cricket.csv](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/cricket.csv)
+2. Included in the code directory is a CSV file named [cricket.csv](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/cricket.csv). The data represents the recorded number of chirps per second for a given temperature. Let's load this data into two lists:
+	```
+	with open('cricket.csv', 'rb') as f:
+    data = list(csv.reader(f))
+
+	X = [[float(point[0])] for point in data]
+	Y = [[float(point[1])] for point in data]
+	```
+
+3. If we plot this data, :
+	```
+	plt.scatter(X, Y, color='black')
+	plt.xlabel('Temperature')
+	plt.ylabel('Chirps/Sec')
+	plt.show()
+	```
+	- If we run the script, we see the positive correlation between temperature and chirps/sec:
+![Lin Reg Points](/images/linear_regression_points.png?raw=true "Lin Reg Points")
