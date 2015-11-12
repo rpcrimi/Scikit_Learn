@@ -17,4 +17,5 @@ While the math behind Linear Regression is fairly simple, we can use Scikit Lear
 	import numpy as np
 	from sklearn import linear_model
 	```
+	
 2. Included in the code directory is a file named [cricket.csv](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/cricket.csv)
