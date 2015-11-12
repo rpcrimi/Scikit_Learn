@@ -31,13 +31,13 @@ In this section, we will work with the digits dataset provided by Scikit Learn. 
 
 5. Now we can use Scikit Learn's metrics (`classification_report` and `confusion_matrix`) to see how our algorithm is performing:
 	```
-	print("Classification report:\n%s\n" % (metrics.classification_report(expected, predicted)))
-	print("Confusion matrix:\n%s" % metrics.confusion_matrix(expected, predicted))
+	print("Classification Report:\n%s\n" % (metrics.classification_report(expected, predicted)))
+	print("Confusion Matrix:\n%s" % metrics.confusion_matrix(expected, predicted))
 	```
 
 6. Run the script. You should see the following output:
 	```
-	Classification report:
+	Classification Report:
              precision    recall  f1-score   support
 
           0       1.00      0.99      0.99        88
@@ -54,7 +54,7 @@ In this section, we will work with the digits dataset provided by Scikit Learn. 
 avg / total       0.97      0.97      0.97       899
 
 
-Confusion matrix:
+Confusion Matrix:
 [[87  0  0  0  1  0  0  0  0  0]
  [ 0 88  1  0  0  0  0  0  1  1]
  [ 0  0 85  1  0  0  0  0  0  0]
@@ -66,3 +66,9 @@ Confusion matrix:
  [ 0  0  0  0  0  0  0  0 88  0]
  [ 0  0  0  1  0  1  0  0  0 90]]
  	```
+ 	- The Classification Report gives information about how well each number in the test set was classified. This includes information about classification precision and recall which lets developers know the accuracy of their classifier.
+ 	- The Confusion Matrix is a representation of which numbers classified as other numbers. A good classifier will have large values along the diagonal of the matrix, as we see above. In this matrix, our SVM classified a test point representing the number 10 correctly 90 times. On the other hand, it classified a test point representing the number 3 as a 9 five times.
+
+The full code for this example can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/metrics.py)
+
+Up Next: [Conclusion](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/conclusion.md)
