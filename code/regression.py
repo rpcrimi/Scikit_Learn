@@ -17,10 +17,6 @@ plt.show()
 regr = linear_model.LinearRegression()
 regr.fit(X, Y)
 
-print("Residual sum of squares: %.2f" % np.mean((regr.predict(X) - Y) ** 2))
-print('Variance score: %.2f' % regr.score(X, Y))
-
-# Plot outputs
 plt.scatter(X, Y,  color='black')
 plt.plot(X, regr.predict(X), color='blue', linewidth=3)
 plt.xlabel('Temperature')
