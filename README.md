@@ -1,9 +1,9 @@
 # Scikit Learn
 
 ## Introduction
-Scikit Learn is the leading edge open source Machine Learning package for Python developers. It provides easy to use classes and highly efficient algorithms so developers do not need to worry about the underlying mathematics of Machine Learning. Scikit Learn provides tools for data mining and analysis, including classification, regression, and clustering. It also provides metrics for these tools so that developers can fine tune their input data to improve their results. Scikit Learn was designed to be integrated with Python's scientific libraries such as NumPy and SciPy.
+Scikit Learn is the leading edge open-source Machine Learning package for Python developers. Its intuitive class structures and highly efficient algorithms free developers from worrying about the underlying mathematics of Machine Learning. Scikit Learn provides tools for data mining and analysis, including classification, regression, and clustering. It also provides metrics to enable developers to fine-tune input data and improve their results. Scikit Learn was designed to be integrated with Python's scientific libraries such as NumPy and SciPy.
 
-Throughout this presentation, we will learn how to use a subset of Scikit Learn's tools by going through some basic examples of Classification, Linear Regression, and Clustering.
+Throughout this presentation, we will learn how to use a subset of the Scikit Learn tool-set via some basic examples of Classification, Linear Regression, and Clustering.
 
 ## Table of Contents
 1. [Machine Learning](https://github.com/rpcrimi/Scikit_Learn/blob/master/markdown/machine_learning.md)

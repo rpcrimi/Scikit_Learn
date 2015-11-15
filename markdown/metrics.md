@@ -1,9 +1,9 @@
 # Metrics
 
-One feature that Scikit Learn provides that is lacking from other Python Machine Learning packages is its metrics. It is important to have metrics about your data and algorithm throughout your development process so that you can gauge how your algorithms are performing. In this section, we will cover two of Scikit Learn's metrics features: Confusion Matrices and Classification Scores.
+It is important to have metrics about your data and algorithm throughout your development process so that you can gauge how your algorithm is performing. One important advantage of using Scikit Learn is its metrics features, which are much more powerful than those provided by other Python ML packages. In this section, we will cover two important Scikit Learn's metrics features: Confusion Matrices and Classification Scores.
 
 ## Metrics in Scikit Learn
-In this section, we will work with the digits dataset provided by Scikit Learn. This dataset includes thousands of images of handwritten digits including each ones actual value. From this dataset, we can use a Support Vector Machine to classify test data.
+In this section, we will work with the digits dataset provided by Scikit Learn. This dataset includes thousands of images of handwritten digits including each ones actual value. From this dataset, we can use an SVM to classify test data. The SVM will produce a confusion matrix and classification scores.
 
 1. Create a new python file and import the following modules:
 	```
