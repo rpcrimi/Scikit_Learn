@@ -4,7 +4,7 @@ Linear Regression is a technique in which the best-fit line is calculated for se
 
 ![Linear Regression](/images/linear_regression_example.jpg?raw=true "Linear Regression")
 
-To determine the regression line from the data points, we use the technique of minimizing the residual sum of squares. The resulting line will be as close to all of the data points as possible.
+Here, the red regression line is a representation of the correlation between our two variables. To determine the regression line from the data points, we use the technique of minimizing the residual sum of squares. The resulting line will be as close to all of the data points as possible.
 
 ## SVMs in Scikit Learn
 

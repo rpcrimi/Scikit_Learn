@@ -65,7 +65,7 @@ Transforming the data's space and calculating the optimal hyperplane can be very
 	```
 	- After running this script we should see the following decision boundaries:
 ![SVM_nonlin_example_separated](/images/svm_nonlin_example_separated.png?raw=true "SVM_nonlin_example_separated")
-	- Scikit Learn transformed our space to classify the data as accurately as possible. However, note that this dataset is not completely classified correctly. For example, the red points in the center are still classified as blue points. In practice, we can supply kernel values to our SVM for better classification.
+	- Scikit Learn transformed our space to classify the data as accurately as possible. However, note that this dataset is not completely correctly classified. For example, the red points in the center are still classified as blue points. In practice, we can supply kernel values to our SVM for better classification.
 
 The full code for this example can be found [here](https://github.com/rpcrimi/Scikit_Learn/blob/master/code/nonlin_svm.py)
 
